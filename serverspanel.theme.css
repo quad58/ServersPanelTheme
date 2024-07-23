@@ -7,8 +7,6 @@
  * @invite AmwzWySsRb
  */
 
-/*import here*/
-
 /* SETTINGS */
 :root {
 	/* GRID SETTINGS */
@@ -19,4 +17,139 @@
 	/* ANIMATION SETTINGS */
     --qsp-animation-duration: 0.1s; /* Duration | DEFAULT: 0.1s */
     --qsp-animation-delay: 75ms; /* Delay | DEFAULT: 75ms */
+}
+
+nav[class*="guilds"] {
+    overflow: visible;
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    transition: width var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+
+nav[class*="guilds"]:hover {
+    width: calc(72px * var(--qsp-columns));
+}
+
+div[class*="guildSeparator"] {
+    transition: width var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+
+nav[class*="guilds"]:hover div[class*="guildSeparator"] {
+    width: calc(72px * var(--qsp-columns) - 40px);
+}
+
+div:has(div[class*="guildSeparator"]) {
+    width: 100%;
+}
+
+nav[class*="guilds"] div:has(div[style="opacity: 1; height: 56px; transform: scale(1);"]) {
+    white-space: nowrap;
+}
+nav[class*="guilds"] div[style="opacity: 1; height: 56px; transform: scale(1);"] {
+    width: 100px;
+    display: inline-block;
+    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+nav[class*="guilds"]:hover div[style="opacity: 1; height: 56px; transform: scale(1);"] {
+    width: 72px;
+}
+
+div[aria-label="Servers"],
+div[aria-label="Servere"],
+div[aria-label="Server"],
+div[aria-label="Servidores"],
+div[aria-label="Serveurs"],
+div[aria-label="Serveri"],
+div[aria-label="Serveriai"],
+div[aria-label="Szerverek"],
+div[aria-label="Serwery"],
+div[aria-label="Palvelimet"],
+div[aria-label="Máy chủ"],
+div[aria-label="Sunucular"],
+div[aria-label="Servery"],
+div[aria-label="Διακομιστές"],
+div[aria-label="Сървъри"],
+div[aria-label="Серверы"],
+div[aria-label="Сервери"],
+div[aria-label="सर्वर"],
+div[aria-label="เซิร์ฟเวอร์"],
+div[aria-label="服务器"],
+div[aria-label="サーバー"],
+div[aria-label="伺服器"],
+div[aria-label="서버"] {
+    display: grid;
+    grid-template-columns: repeat(var(--qsp-columns), 100px);
+    grid-template-rows: repeat(var(--qsp-rows), 70px);
+    grid-auto-flow: var(--qsp-grid-flow);
+    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+
+nav[class*="guilds"]:hover div[aria-label="Servers"],
+nav[class*="guilds"]:hover div[aria-label="Servere"],
+nav[class*="guilds"]:hover div[aria-label="Server"],
+nav[class*="guilds"]:hover div[aria-label="Servidores"],
+nav[class*="guilds"]:hover div[aria-label="Serveurs"],
+nav[class*="guilds"]:hover div[aria-label="Serveri"],
+nav[class*="guilds"]:hover div[aria-label="Serveriai"],
+nav[class*="guilds"]:hover div[aria-label="Szerverek"],
+nav[class*="guilds"]:hover div[aria-label="Serwery"],
+nav[class*="guilds"]:hover div[aria-label="Palvelimet"],
+nav[class*="guilds"]:hover div[aria-label="Máy chủ"],
+nav[class*="guilds"]:hover div[aria-label="Sunucular"],
+nav[class*="guilds"]:hover div[aria-label="Servery"],
+nav[class*="guilds"]:hover div[aria-label="Διακομιστές"],
+nav[class*="guilds"]:hover div[aria-label="Сървъри"],
+nav[class*="guilds"]:hover div[aria-label="Серверы"],
+nav[class*="guilds"]:hover div[aria-label="Сервери"],
+nav[class*="guilds"]:hover div[aria-label="सर्वर"],
+nav[class*="guilds"]:hover div[aria-label="เซิร์ฟเวอร์"],
+nav[class*="guilds"]:hover div[aria-label="服务器"],
+nav[class*="guilds"]:hover div[aria-label="サーバー"],
+nav[class*="guilds"]:hover div[aria-label="伺服器"],
+nav[class*="guilds"]:hover div[aria-label="서버"] {
+    display: grid;
+    grid-template-columns: repeat(var(--qsp-columns), 72px);
+    grid-template-rows: repeat(var(--qsp-rows), 70px);
+}
+
+nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(3) {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 99px;
+    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(2) {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 212px;
+    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(3) {
+    left: 71px;
+}
+nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(2) {
+    left: 156px;
+}
+
+div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[class*="content"] {
+    margin-left: 72px;
+    width: calc(100% - 72px);
+}
+
+nav[class*="guilds"] div[class*="blobContainer"]::after {
+    content: attr(data-dnd-name);
+    color: var(--text-normal);
+    font-size: 10px;
+    width: 46px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    height: 10px;
+    margin-top: 5px;
+    text-align: center;
+    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
