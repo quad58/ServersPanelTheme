@@ -10,9 +10,9 @@
 /* SETTINGS */
 :root {
 	/* GRID SETTINGS */
-    --qsp-rows: 13; /* Rows count | DEFAULT: 20 */
+    --qsp-rows: 20; /* Rows count | DEFAULT: 20 */
     --qsp-columns: 5; /* Columns count | DEFAULT: 5 */
-    --qsp-grid-flow: column; /* Flow | OPTIONS: column, row | DEFAULT: row */
+    --qsp-grid-flow: row; /* Flow | OPTIONS: column, row | DEFAULT: row */
 
 	/* ANIMATION SETTINGS */
     --qsp-animation-duration: 0.1s; /* Duration | DEFAULT: 0.1s */
@@ -55,14 +55,14 @@ nav[class*="guilds"]:hover div[style="opacity: 1; height: 56px; transform: scale
     width: 72px;
 }
 
-nav[class*="guilds"] div[aria-label="Серверы"], nav[class*="guilds"] div[aria-label="Servers"] {
+div[aria-label="Серверы"], div[aria-label="Servers"] {
     display: grid;
     grid-template-columns: repeat(var(--qsp-columns), 100px);
     grid-template-rows: repeat(var(--qsp-rows), 70px);
     grid-auto-flow: var(--qsp-grid-flow);
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-nav[class*="guilds"]:hover div[aria-label="Серверы"], nav[class*="guilds"] div[aria-label="Servers"] {
+nav[class*="guilds"]:hover div[aria-label="Серверы"], nav[class*="guilds"]:hover div[aria-label="Servers"] {
     display: grid;
     grid-template-columns: repeat(var(--qsp-columns), 72px);
     grid-template-rows: repeat(var(--qsp-rows), 70px);
