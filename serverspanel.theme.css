@@ -96,7 +96,7 @@ div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[cla
 
 nav[class*="guilds"] div[class*="blobContainer"]::after {
     content: attr(data-dnd-name);
-    color: rgba(255, 255, 255, 0.842);
+    color: var(--text-normal);
     font-size: 10px;
     width: 46px;
     white-space: nowrap;
