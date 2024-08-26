@@ -130,7 +130,6 @@ nav[class*="guilds"] div[class*="blobContainer"]::after, nav[class*="guilds"] di
     height: 10px;
     margin-top: 5px;
     text-align: center;
-    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
 nav[class*="guilds"] ul[id*="folder-items-"] {
