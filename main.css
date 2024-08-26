@@ -118,7 +118,7 @@ div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[cla
     width: calc(100% - 72px);
 }
 
-nav[class*="guilds"] div[class*="blobContainer"]::after {
+nav[class*="guilds"] div[class*="blobContainer"]::after, nav[class*="guilds"] div[class*="wrapper_"] > div[class*="listItem_"] > div[data-dnd-name]::after {
     content: attr(data-dnd-name);
     color: var(--text-normal);
     font-size: 10px;
