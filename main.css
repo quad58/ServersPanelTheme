@@ -132,3 +132,30 @@ nav[class*="guilds"] div[class*="blobContainer"]::after, nav[class*="guilds"] di
     text-align: center;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
+
+nav[class*="guilds"] ul[id*="folder-items-"] {
+	height: auto;
+    display: grid;
+    grid-auto-rows: 70px;
+	background-color: black;
+    position: fixed;
+	z-index: 100000;
+}
+nav[class*="guilds"] ul[id*="folder-items-"]:has(> :last-child:nth-child(1)) {
+    grid-template-columns: repeat(1, 72px);
+}
+nav[class*="guilds"] ul[id*="folder-items-"]:has(> :last-child:nth-child(2)) {
+    grid-template-columns: repeat(2, 72px);
+}
+nav[class*="guilds"] ul[id*="folder-items-"]:has(> :last-child:nth-child(3)) {
+    grid-template-columns: repeat(3, 72px);
+}
+nav[class*="guilds"] ul[id*="folder-items-"]:has(> :last-child:nth-child(4)) {
+    grid-template-columns: repeat(4, 72px);
+}
+nav[class*="guilds"] ul[id*="folder-items-"]:has(> :last-child:nth-child(5)) {
+    grid-template-columns: repeat(5, 72px);
+}
+nav[class*="guilds"] ul[id*="folder-items-"]:has(> :nth-child(5)) {
+    grid-template-columns: repeat(5, 72px);
+}
