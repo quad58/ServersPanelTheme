@@ -149,6 +149,7 @@ nav[class*="guilds"] ul[id*="folder-items-"] {
 	z-index: 1;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 	opacity: 0;
+	box-shadow: 0 0 10px black;
 }
 
 nav[class*="guilds"]:hover ul[id*="folder-items-"] {
