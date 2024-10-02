@@ -1,13 +1,21 @@
 nav[class*="guilds"] {
-    overflow: visible;
+    overflow: hidden scroll;
     position: absolute;
     z-index: 1000;
     height: 100%;
     transition: width var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
+nav[class*="guilds"]::-webkit-scrollbar {
+    display: none;
+}
+
 nav[class*="guilds"]:hover {
     width: calc(72px * var(--qsp-columns));
+}
+
+nav[class*="guilds"] > ul > div:nth-child(2) {
+    overflow: visible !important;
 }
 
 div[class*="guildSeparator"] {
@@ -87,30 +95,40 @@ nav[class*="guilds"]:hover div[aria-label="服务器"],
 nav[class*="guilds"]:hover div[aria-label="サーバー"],
 nav[class*="guilds"]:hover div[aria-label="伺服器"],
 nav[class*="guilds"]:hover div[aria-label="서버"] {
-    display: grid;
     grid-template-columns: repeat(var(--qsp-columns), 72px);
     grid-template-rows: repeat(var(--qsp-rows), 70px);
 }
 
-nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(3) {
+.footer_aa1bff {
     display: inline-block;
     position: absolute;
     top: 5px;
-    left: 99px;
+    left: 112px;
+    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    width: 0;
+    padding: 0;
+}
+.footer_aa1bff > div:nth-child(2) {
+    display: inline-block;
+    position: absolute;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
+.footer_aa1bff > div:nth-child(1) {
+    display: none;
+}
+
 nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(2) {
     display: inline-block;
     position: absolute;
     top: 5px;
-    left: 212px;
+    left: 199px;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(3) {
-    left: 71px;
+nav[class*="guilds"]:hover .footer_aa1bff {
+    left: 84px;
 }
 nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(2) {
-    left: 156px;
+    left: 143px;
 }
 
 div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[class*="content"] {
