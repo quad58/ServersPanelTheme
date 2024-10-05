@@ -100,16 +100,14 @@ nav[class*="guilds"]:hover div[aria-label="서버"] {
 }
 
 nav[class*="guilds"] > ul > div:nth-child(3) {
-    display: inline-block;
     position: absolute;
     top: 5px;
-    left: 112px;
+    left: 99.5px;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
     width: 0;
     padding: 0;
 }
 nav[class*="guilds"] > ul > div:nth-child(3) > div:nth-child(2) {
-    display: inline-block;
     position: absolute;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
@@ -118,17 +116,16 @@ nav[class*="guilds"] > ul > div:nth-child(3) > div:nth-child(1) {
 }
 
 nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(2) {
-    display: inline-block;
     position: absolute;
     top: 5px;
-    left: 199px;
+    left: 199.5px;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 nav[class*="guilds"]:hover > ul > div:nth-child(3) {
-    left: 84px;
+    left: 71.5px;
 }
 nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(2) {
-    left: 143px;
+    left: 143.5px;
 }
 
 div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[class*="content"] {
