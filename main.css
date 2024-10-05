@@ -136,7 +136,7 @@ div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[cla
     width: calc(100% - 72px);
 }
 
-div[class*="blobContainer"]::after, nav[class*="guilds"] .wrapper_bc7085 > div[class*="listItem_"] > div[data-dnd-name]::after {
+div[class*="blobContainer"]::after, nav[class*="guilds"] div:has(ul[id*="folder-items-"]) > div[class*="listItem_"] > div[data-dnd-name]::after {
     content: attr(data-dnd-name);
     color: var(--text-normal);
     font-size: 10px;
@@ -191,11 +191,11 @@ nav[class*="guilds"] ul[id*="folder-items-"]:has(> :nth-child(4)) {
     grid-template-columns: repeat(4, 72px);
 }
 
-.wrapper_bc7085:active {
+div:has(ul[id*="folder-items-"]):active {
     transform: none;
 }
 
-.expandedFolderBackground_bc7085 {
+div:has(ul[id*="folder-items-"]) > span {
 	display: none;
 }
 
