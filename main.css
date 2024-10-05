@@ -124,7 +124,7 @@ nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(2) {
     left: 199px;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-nav[class*="guilds"]:hover .footer_aa1bff {
+nav[class*="guilds"]:hover > ul > div:nth-child(3) {
     left: 84px;
 }
 nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(2) {
