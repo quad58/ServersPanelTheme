@@ -99,7 +99,7 @@ nav[class*="guilds"]:hover div[aria-label="서버"] {
     grid-template-rows: repeat(var(--qsp-rows), 70px);
 }
 
-.footer_aa1bff {
+nav[class*="guilds"] > ul > div:nth-child(3) {
     display: inline-block;
     position: absolute;
     top: 5px;
@@ -108,12 +108,12 @@ nav[class*="guilds"]:hover div[aria-label="서버"] {
     width: 0;
     padding: 0;
 }
-.footer_aa1bff > div:nth-child(2) {
+nav[class*="guilds"] > ul > div:nth-child(3) > div:nth-child(2) {
     display: inline-block;
     position: absolute;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-.footer_aa1bff > div:nth-child(1) {
+nav[class*="guilds"] > ul > div:nth-child(3) > div:nth-child(1) {
     display: none;
 }
 
