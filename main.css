@@ -198,3 +198,15 @@ nav[class*="guilds"] ul[id*="folder-items-"]:has(> :nth-child(4)) {
 .expandedFolderBackground_bc7085 {
 	display: none;
 }
+
+div[class*="unreadMentionsFixedFooter"] {
+	bottom: 0;
+	position: fixed;
+}
+
+div[class*="unreadMentionsIndicatorTop"], div[class*="unreadMentionsIndicatorBottom"] {
+	transition: opacity var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorBottom"] {
+	opacity: 0;
+}
