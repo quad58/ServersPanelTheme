@@ -120,12 +120,6 @@ nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(2) {
     top: 5px;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-nav[class*="guilds"]:hover > ul > div:nth-child(3) {
-    left: 71.5px;
-}
-nav[class*="guilds"]:hover > ul > div:nth-child(2) > div:nth-last-child(2) {
-    left: 143.5px;
-}
 
 div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[class*="content"] {
     margin-left: 72px;
@@ -214,7 +208,8 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
 .footer_d71945:nth-child(2) {
     left: 100px;
     top: 8px;
+	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-.footer_d71945:nth-child(2):hover {
+nav[class*="guilds"]:hover .footer_d71945:nth-child(2) {
     left: 71.5px;
 }
