@@ -219,6 +219,7 @@ nav[class*="guilds"]:hover .footer_d71945:nth-child(2) {
     left: 200px;
     position: absolute;
     z-index: 1;
+	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
 nav[class*="guilds"]:hover .tutorialContainer_c96c45 {
