@@ -207,7 +207,7 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
 
 .footer_d71945:nth-child(2) {
     left: 100px;
-    top: 8px;
+    top: 9px;
 	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 nav[class*="guilds"]:hover .footer_d71945:nth-child(2) {
