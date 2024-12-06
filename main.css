@@ -213,3 +213,14 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
 nav[class*="guilds"]:hover .footer_d71945:nth-child(2) {
     left: 71.5px;
 }
+
+.tutorialContainer_c96c45 {
+    top: 4px;
+    left: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+nav[class*="guilds"]:hover .tutorialContainer_c96c45 {
+    left: 144px;
+}
