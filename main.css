@@ -201,20 +201,20 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
 	opacity: 0;
 }
 
-.footer_d71945 {
+.footer__214dc {
     background: none;
 }
 
-.footer_d71945:nth-child(2) {
+.footer__214dc:nth-child(2) {
     left: 100px;
-    top: 9px;
+    top: 8px;
 	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
-nav[class*="guilds"]:hover .footer_d71945:nth-child(2) {
+nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
     left: 71.5px;
 }
 
-.tutorialContainer_c96c45 {
+.tutorialContainer__650eb {
     top: 4px;
     left: 200px;
     position: absolute;
@@ -222,6 +222,6 @@ nav[class*="guilds"]:hover .footer_d71945:nth-child(2) {
 	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
-nav[class*="guilds"]:hover .tutorialContainer_c96c45 {
+nav[class*="guilds"]:hover .tutorialContainer__650eb {
     left: 144px;
 }
