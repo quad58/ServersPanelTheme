@@ -95,7 +95,7 @@ nav[class*="guilds"]:hover div[aria-label="服务器"],
 nav[class*="guilds"]:hover div[aria-label="サーバー"],
 nav[class*="guilds"]:hover div[aria-label="伺服器"],
 nav[class*="guilds"]:hover div[aria-label="서버"] {
-    grid-template-columns: repeat(var(--qsp-columns), 72px);
+    grid-template-columns: repeat(var(--qsp-columns), 64px);
     grid-template-rows: repeat(var(--qsp-rows), 70px);
 }
 
@@ -121,16 +121,16 @@ nav[class*="guilds"] > ul > div:nth-child(2) > div:nth-last-child(2) {
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
-div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[class*="content"] {
+div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[class*="content"] > div[class*="sidebar"] > div[class*="sidebarList"] {
     margin-left: 72px;
-    width: calc(100% - 72px);
 }
 
 div[class*="blobContainer"]::after, nav[class*="guilds"] div:has(ul[id*="folder-items-"]) > div[class*="listItem_"] > div[data-dnd-name]::after {
     content: attr(data-dnd-name);
     color: var(--text-normal);
     font-size: 10px;
-    width: 46px;
+    width: 50px;
+    margin-left: -5px;
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
@@ -225,4 +225,9 @@ nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
 
 nav[class*="guilds"]:hover .tutorialContainer__650eb {
     left: 144px;
+}
+
+section[class*="panels"] {
+    margin-left: 74px;
+    width: calc(100% - var(--custom-panels-spacing) * 2 - 74px) !important;
 }
