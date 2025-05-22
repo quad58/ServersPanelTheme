@@ -207,7 +207,7 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
 
 .footer__214dc:nth-child(2) {
 	width: 10px;
-    left: 100px;
+    left: 72px;
     top: 8px;
 	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
@@ -216,16 +216,27 @@ nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
 }
 
 .tutorialContainer__650eb {
-    top: 4px;
-    left: 200px;
+    top: 0px;
+    left: 108px;
     position: absolute;
     z-index: 1;
 	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
 nav[class*="guilds"]:hover .tutorialContainer__650eb {
-    top: 0px;
     left: 72px;
+}
+
+nav[class*="guilds"] > ul > div > div > div:nth-child(6)[class*="listItem"] {
+    top: 0;
+    left: 216px;
+    position: absolute;
+    z-index: 1;
+	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+}
+
+nav[class*="guilds"]:hover > ul > div > div > div:nth-child(6)[class*="listItem"] {
+    left: 144px;
 }
 
 section[class*="panels"] {
