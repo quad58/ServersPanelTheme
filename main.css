@@ -141,28 +141,28 @@ div[class*="blobContainer"]::after, nav[class*="guilds"] div:has(ul[id*="folder-
 }
 
 nav[class*="guilds"] ul[id*="folder-items-"] {
-	height: auto !important;
-	margin-top: -68px;
-	margin-left: -720px;
-	padding-top: 12px;
-	padding-left: 6px;
-	padding-right: 6px;
-	padding-bottom: 4px;
+    height: auto !important;
+    margin-top: -68px;
+    margin-left: -720px;
+    padding-top: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 4px;
     display: grid;
     grid-auto-rows: 70px;
-	background-color: color-mix(in oklab, var(--background-tertiary) 65%, #000000aa);
-	backdrop-filter: blur(5px);
-	border-radius: 12px;
+    background-color: color-mix(in oklab, var(--background-tertiary) 65%, #000000aa);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
     position: fixed;
-	z-index: 1;
+    z-index: 1;
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
-	opacity: 0;
-	box-shadow: 0 0 10px black;
+    opacity: 0;
+    box-shadow: 0 0 10px black;
 }
 
 nav[class*="guilds"]:hover ul[id*="folder-items-"] {
-	opacity: 1;
-	margin-left: 72px;
+    opacity: 1;
+    margin-left: 72px;
 }
 
 nav[class*="guilds"] ul[id*="folder-items-"]:has(> :last-child:nth-child(1)) {
@@ -186,19 +186,19 @@ div:has(ul[id*="folder-items-"]):active {
 }
 
 div:has(ul[id*="folder-items-"]) > span {
-	display: none;
+    display: none;
 }
 
 div[class*="unreadMentionsFixedFooter"] {
-	bottom: 0;
-	position: fixed;
+    bottom: 0;
+    position: fixed;
 }
 
 div[class*="unreadMentionsIndicatorTop"], div[class*="unreadMentionsIndicatorBottom"] {
-	transition: opacity var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: opacity var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorBottom"] {
-	opacity: 0;
+    opacity: 0;
 }
 
 .footer__214dc {
@@ -206,10 +206,10 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
 }
 
 .footer__214dc:nth-child(2) {
-	width: 10px;
+    width: 10px;
     left: 72px;
     top: 8px;
-	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
     left: 71.5px;
@@ -220,7 +220,7 @@ nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
     left: 108px;
     position: absolute;
     z-index: 1;
-	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
 nav[class*="guilds"]:hover .tutorialContainer__650eb {
@@ -232,7 +232,7 @@ nav[class*="guilds"] > ul > div > div > div:nth-child(6)[class*="listItem"] {
     left: 216px;
     position: absolute;
     z-index: 1;
-	transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
 
 nav[class*="guilds"]:hover > ul > div > div > div:nth-child(6)[class*="listItem"] {
