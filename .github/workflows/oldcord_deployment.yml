@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy-subfolder:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -43,4 +43,5 @@ jobs:
         path: .
 
     - name: Deploy to GitHub Pages
+      id: deployment
       uses: actions/deploy-pages@v4
