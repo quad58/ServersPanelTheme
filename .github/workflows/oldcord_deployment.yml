@@ -32,10 +32,18 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: 'oldcord'
-        path: 'oldcord'
+        path: 'oldcord_temp'
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
+      
+    - name: Copy subfolder content
+      run: |
+        mkdir -p oldcord
+        # Копируем содержимое из временной папки в подпапку
+        cp -R oldcord_temp/* oldcord/
+        # Удаляем временную папку
+        rm -rf oldcord_temp
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
