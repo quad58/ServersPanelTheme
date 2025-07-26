@@ -4,6 +4,7 @@ nav[class*="guilds"] {
     z-index: 1000;
     height: 100%;
     transition: width var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: width;
 }
 
 nav[class*="guilds"]::-webkit-scrollbar {
@@ -20,6 +21,7 @@ nav[class*="guilds"] > ul > div:nth-child(2) {
 
 div[class*="guildSeparator"] {
     transition: width var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: width;
 }
 
 nav[class*="guilds"]:hover div[class*="guildSeparator"] {
@@ -36,7 +38,8 @@ nav[class*="guilds"] div:has(div[style="opacity: 1; height: 56px; transform: sca
 nav[class*="guilds"] div[style="opacity: 1; height: 56px; transform: scale(1);"] {
     width: 100px;
     display: inline-block;
-    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: width var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: width;
 }
 nav[class*="guilds"]:hover div[style="opacity: 1; height: 56px; transform: scale(1);"] {
     width: 72px;
@@ -69,7 +72,8 @@ div[aria-label="서버"] {
     grid-template-columns: repeat(var(--qsp-columns), 100px);
     grid-template-rows: repeat(var(--qsp-rows), 60px);
     grid-auto-flow: var(--qsp-grid-flow);
-    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: grid-template-columns var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: grid-template-columns;
 }
 
 nav[class*="guilds"]:hover div[aria-label="Servers"],
@@ -154,7 +158,8 @@ nav[class*="guilds"] ul[id*="folder-items-"] {
     border-radius: 12px;
     position: fixed;
     z-index: 1;
-    transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    transition: opacity var(--qsp-animation-duration) ease-out var(--qsp-animation-delay), margin-left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: opacity, margin-left;
     opacity: 0;
     box-shadow: 0 0 10px black;
 }
@@ -195,6 +200,7 @@ div[class*="unreadMentionsFixedFooter"] {
 
 div[class*="unreadMentionsIndicatorTop"], div[class*="unreadMentionsIndicatorBottom"] {
     transition: opacity var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: opacity;
 }
 nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorBottom"] {
     opacity: 0;
@@ -209,6 +215,7 @@ nav[class*="guilds"]:hover div[class*="unreadMentionsIndicatorTop"], nav[class*=
     left: 72px;
     top: 8px;
     transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: left;
 }
 nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
     left: 71.5px;
@@ -219,6 +226,7 @@ nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
     position: absolute;
     z-index: 1;
     transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: left;
 }
 
 nav[class*="guilds"]:hover .tutorialContainer__650eb {
@@ -230,6 +238,7 @@ nav[class*="guilds"] > ul > div > div > div:nth-child(6)[class*="listItem"] {
     position: absolute;
     z-index: 1;
     transition: left var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
+    will-change: left;
 }
 
 nav[class*="guilds"]:hover > ul > div > div > div:nth-child(6)[class*="listItem"] {
