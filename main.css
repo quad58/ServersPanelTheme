@@ -216,7 +216,6 @@ nav[class*="guilds"]:hover .footer__214dc:nth-child(2) {
 }
 
 .tutorialContainer__650eb {
-    top: 0px;
     left: 108px;
     position: absolute;
     z-index: 1;
@@ -228,7 +227,6 @@ nav[class*="guilds"]:hover .tutorialContainer__650eb {
 }
 
 nav[class*="guilds"] > ul > div > div > div:nth-child(6)[class*="listItem"] {
-    top: 0;
     left: 216px;
     position: absolute;
     z-index: 1;
