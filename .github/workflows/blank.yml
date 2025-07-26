@@ -1,0 +1,31 @@
+name: Deploy from two branches
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the `main` branch
+      - uses: actions/checkout@v2
+
+      # Checkout the `oldcord` branch
+      - uses: actions/checkout@v2
+        with:
+          ref: oldcord
+          # Put the checked out files inside the `oldcord` folder
+          path: oldcord
+          clean: false
+      # Delete the .git folder from `oldcord`
+      # This turns the files into a plain folder instead of a git repository
+      - run: rm -rf oldcord/.git
+      # Deploy the `oldcord` folder to GitHub Pages
+      - uses: quad58/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: './oldcord'
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
