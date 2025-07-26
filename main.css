@@ -243,3 +243,7 @@ section[class*="panels"] {
     margin-left: 74px;
     width: calc(100% - var(--custom-panels-spacing) * 2 - 74px) !important;
 }
+
+div[class*="pill"] {
+    height: 40px;
+}
