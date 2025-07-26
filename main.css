@@ -67,7 +67,7 @@ div[aria-label="伺服器"],
 div[aria-label="서버"] {
     display: grid;
     grid-template-columns: repeat(var(--qsp-columns), 100px);
-    grid-template-rows: repeat(var(--qsp-rows), 70px);
+    grid-template-rows: repeat(var(--qsp-rows), 60px);
     grid-auto-flow: var(--qsp-grid-flow);
     transition: all var(--qsp-animation-duration) ease-out var(--qsp-animation-delay);
 }
@@ -96,7 +96,6 @@ nav[class*="guilds"]:hover div[aria-label="サーバー"],
 nav[class*="guilds"]:hover div[aria-label="伺服器"],
 nav[class*="guilds"]:hover div[aria-label="서버"] {
     grid-template-columns: repeat(var(--qsp-columns), 64px);
-    grid-template-rows: repeat(var(--qsp-rows), 70px);
 }
 
 nav[class*="guilds"] > ul > div:nth-child(3) {
