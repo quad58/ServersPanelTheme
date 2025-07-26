@@ -127,7 +127,7 @@ div[class*="baseLayer"] > div[class*="container"] > div[class*="base"] > div[cla
 
 div[class*="blobContainer"]::after, nav[class*="guilds"] div:has(ul[id*="folder-items-"]) > div[class*="listItem_"] > div[data-dnd-name]::after {
     content: attr(data-dnd-name);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 10px;
     width: 50px;
     margin-left: -5px;
